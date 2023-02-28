@@ -1,9 +1,9 @@
 import { createContext, useState, useMemo } from "react";
-import {createTheme} from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
 //color design
-export const tokes= (mode) => ({
-    ...createContext(mode === 'dark'
+export const tokens = (mode) => ({
+    ...(mode === 'dark'
     ? {
         grey: {
             100: "#e0e0e0",
@@ -14,7 +14,7 @@ export const tokes= (mode) => ({
             600: "#525252",
             700: "#3d3d3d",
             800: "#292929",
-            900: "#141414"
+            900: "#141414",
         },
         primary: {
             100: "#d0d1d5",
@@ -25,7 +25,7 @@ export const tokes= (mode) => ({
             600: "#101624",
             700: "#0c101b",
             800: "#080b12",
-            900: "#040509"
+            900: "#040509",
         },
         greenAccent: {
             100: "#dbf5ee",
@@ -36,7 +36,7 @@ export const tokes= (mode) => ({
             600: "#3da58a",
             700: "#2e7c67",
             800: "#1e5245",
-            900: "#0f2922"
+            900: "#0f2922",
         },
         redAccent: {
             100: "#f8dcdb",
@@ -47,7 +47,7 @@ export const tokes= (mode) => ({
             600: "#af3f3b",
             700: "#832f2c",
             800: "#58201e",
-            900: "#2c100f"
+            900: "#2c100f",
         },
         blueAccent: {
                   100: "#e1e2fe",
@@ -58,12 +58,12 @@ export const tokes= (mode) => ({
                   600: "#535ac8",
                   700: "#3e4396",
                   800: "#2a2d64",
-                  900: "#151632"
+                  900: "#151632",
         },
     }
     :{
             grey: {
-                100: "#141414"
+                100: "#141414",
                 200: "#292929",
                 300: "#3d3d3d",
                 400: "#525252",
@@ -74,7 +74,7 @@ export const tokes= (mode) => ({
                 900: "#e0e0e0",
             },
             primary: {
-                100: "#040509"
+                100: "#040509",
                 200: "#080b12",
                 300: "#0c101b",
                 400: "#f2f0f0",
@@ -85,7 +85,7 @@ export const tokes= (mode) => ({
                 900: "#d0d1d5",
             },
             greenAccent: {
-                100: "#0f2922"
+                100: "#0f2922",
                 200: "#1e5245",
                 300: "#2e7c67",
                 400: "#3da58a",
@@ -96,7 +96,7 @@ export const tokes= (mode) => ({
                 900: "#dbf5ee",
             },
             redAccent: {
-                100: "#2c100f"
+                100: "#2c100f",
                 200: "#58201e",
                 300: "#832f2c",
                 400: "#af3f3b",
@@ -107,7 +107,7 @@ export const tokes= (mode) => ({
                 900: "#f8dcdb",
             },
             blueAccent: {
-                      100: "#151632"
+                      100: "#151632",
                       200: "#2a2d64",
                       300: "#3e4396",
                       400: "#535ac8",
@@ -125,9 +125,9 @@ export const themeSettings = (mode) => {
     const colors = tokens(mode);
 
     return{
-        palette:{
+        palette: {
             mode: mode,
-            ...colors(mode === 'dark'
+            ...(mode === 'dark'
             ? {
                 primary: {
                     main: colors.primary[500],
