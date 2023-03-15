@@ -46,7 +46,7 @@ const Sidebar= () =>{
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center" margin= "5em">
                 <img
-                  alt="profile-users"
+                  alt=""
                   width="100px"
                   height="100px"
                   src={`../pic/USER.jpg`}
@@ -70,18 +70,23 @@ const Sidebar= () =>{
             </Box>
             <Box display="flex" flexDirection={'column'} >
                 <IconButton sx={{ p: 6 }}>
+                  <Link to="/index">
                     <HomeOutlinedIcon style={{fontSize: 60}}/>
+                    </Link>
                 </IconButton>
                 <IconButton sx={{ p: 6 }}>
                     <SsidChartIcon style={{fontSize: 60}}/>
                 </IconButton>
+                
                 <IconButton sx={{ p: 6 }}>
+                <Link to="/Contact">
                     <HelpOutlineOutlinedIcon style={{fontSize: 60}}/>
+                    </Link>
                 </IconButton>
                 <IconButton sx={{ p: 6 }} >
                     <LoginOutlinedIcon style={{fontSize: 60}} />
                 </IconButton>
-        
+                
 
 
         </Box>

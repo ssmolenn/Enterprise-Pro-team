@@ -23,7 +23,7 @@ const TopBar = () => {
                     alignItems="center"
                     ml="25px"
                 >
-                <Typography variant="h3" color={colors.grey[100]}>
+                <Typography variant="h2" color={colors.grey[100]}>
                     Rakusens
                 </Typography>
 

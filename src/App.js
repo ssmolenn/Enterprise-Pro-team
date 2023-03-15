@@ -7,7 +7,7 @@ import Sidebar from "./scenes/global/Sidebar";
 import Chart from "./components/Chart";
 import LoginPage from "./components/LoginPage";
 import Settings from "./components/Settings";
-import Contact from "./components/Contact";
+import Contact from "./scenes/faq/Contact";
 
 function App() {
   const [theme,colorMode] = useMode();
