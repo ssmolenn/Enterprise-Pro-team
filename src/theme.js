@@ -1,7 +1,7 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
 
-//color design
+//changing between dark/light mode
 export const tokens = (mode) => ({
     ...(mode === 'dark'
     ? {
@@ -195,7 +195,7 @@ export const themeSettings = (mode) => {
 
 // context for color mode
 export const ColorModeContext = createContext({
-    toggleColorMode: () => {}
+    toggleColorMode: () => {},
 });
 
 export const useMode = () => {
