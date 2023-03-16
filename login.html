@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title> Login and Registration</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+	<form name="login" method="post" onsubmit= "return validateForm()">
+		<div class = "title"> Login </div>
+		<label for="email"> Email/Username</label>
+		<input type="email" id="email" name="email"> 
+<br>
+		<label for="password"> Password</label>
+		<input type="password" id="password" name="password"> 
+
+		<input type="submit" value="Submit"> 
+		<a href="./registration.html"> Registrattion</a>
+	</form>
+	</div>
+	</div>
+
+
+
+</body>
+</html>
+
+<script>
+    function validateForm(){
+        var email = document.forms["login"]["email"].value;
+        var password = document.forms["login"]["password"].value;
+
+        if(email == ""){
+            alert("email not valid");
+            return false
+        }
+        if(password == ""){
+            alert("password not valid");
+            return false
+        }
+    }
+    </script>
