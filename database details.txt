@@ -1,0 +1,4 @@
+hostname=rakusensdata.mysql.database.azure.com
+username=rakusens
+password=Root123
+database name=data 
