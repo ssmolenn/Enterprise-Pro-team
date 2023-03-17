@@ -4,10 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import TopBar from "./scenes/global/TopBar";
 import Dashboard from "./scenes/dashboard";
 import Sidebar from "./scenes/global/Sidebar";
-import Chart from "./components/Chart";
+import Charts from "./scenes/chart/Charts";
 import LoginPage from "./components/LoginPage";
 import Settings from "./components/Settings";
 import Contact from "./scenes/faq/Contact";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./index.css"
 
 function App() {
   const [theme,colorMode] = useMode();
@@ -22,8 +24,8 @@ function App() {
                     <TopBar />
                     <Routes>
                       <Route path="/" element={<Dashboard />} />
-                      <Route path="/Chart" element={<Chart />} />
-                      <Route path="/LoginPage" element={<LoginPage />} />
+                      <Route path="/Charts" element={<Charts />} />
+                      <Route path="/LoginPage" element={<LoginPage/>} />
                       <Route path="/Settings" element={<Settings />} />
                       <Route path="/Contact" element={<Contact />} />
                     </Routes>
