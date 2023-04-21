@@ -1,0 +1,6 @@
+***Best accessed on MySQL Workbench****
+hostname: 35.189.98.101
+port: 3306
+username: root
+password: admin
+default schema: data
