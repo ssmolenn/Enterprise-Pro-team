@@ -9,7 +9,6 @@ import plotly.express as px
 # Read data from CSV file
 
 data = pd.read_csv(
-    "mon-thur.csv",
 )
 df = pd.DataFrame(
     data,

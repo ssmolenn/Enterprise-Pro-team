@@ -18,6 +18,10 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
+        position: "sticky",
+        right: 0,
+        top: 0,
+        height: "100vh",
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
         },
@@ -35,6 +39,12 @@ const Sidebar = () => {
         },
       }}
     >
+      <Box 
+      sx={{
+          position: "sticky",
+          left: 0,
+          top: 0,
+          }}>
       <Menu iconShape="square">
         <Box mb="25px">
           <Box
@@ -88,6 +98,7 @@ const Sidebar = () => {
           </IconButton>
         </Box>
       </Menu>
+      </Box>
     </Box>
   );
 };
