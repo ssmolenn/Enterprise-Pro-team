@@ -57,7 +57,7 @@ const Sidebar = () => {
               alt=""
               width="100px"
               height="100px"
-              src={`../pic/USER.jpg`}
+              src={`../../pic/USER.jpg`}
               style={{ cursor: "pointer", borderRadius: "50%" }}
             />
           </Box>
@@ -92,7 +92,7 @@ const Sidebar = () => {
             </Link>
           </IconButton>
           <IconButton sx={{ p: 6 }}>
-            <Link to="/LoginPage">
+            <Link to="/register">
               <LoginOutlinedIcon style={{ fontSize: 60 }} />
             </Link>
           </IconButton>

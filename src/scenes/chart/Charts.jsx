@@ -14,6 +14,9 @@ const Charts = () => {
           This page is showing all sensors from the oven.
         </h4>
       </Box>
+      <div className="ChartDescription">
+        <p>Rakusens Sensor R0</p>
+      </div>
       <Box
         display="flex"
         backgroundColor={colors.primary[400]}
@@ -22,6 +25,9 @@ const Charts = () => {
       >
         <Chart />
       </Box>
+      <div className="ChartDescription">
+        <p>Rakusens Sensor R1</p>
+      </div>
       <Box
         display="flex"
         backgroundColor={colors.primary[400]}
@@ -30,6 +36,9 @@ const Charts = () => {
       >
         <Chart />
       </Box>
+      <div className="ChartDescription">
+        <p>Rakusens Sensor R2</p>
+      </div>
       <Box
         display="flex"
         backgroundColor={colors.primary[400]}
@@ -38,6 +47,9 @@ const Charts = () => {
       >
         <Chart />
       </Box>
+      <div className="ChartDescription">
+        <p>Rakusens Sensor R3</p>
+      </div>
       <Box
         display="flex"
         backgroundColor={colors.primary[400]}
@@ -46,6 +58,9 @@ const Charts = () => {
       >
         <Chart />
       </Box>
+      <div className="ChartDescription">
+        <p>Rakusens Sensor R4</p>
+      </div>
       <Box
         display="flex"
         backgroundColor={colors.primary[400]}
@@ -54,6 +69,9 @@ const Charts = () => {
       >
         <Chart />
       </Box>
+      <div className="ChartDescription">
+        <p>Rakusens Sensor R5</p>
+      </div>
       <Box
         display="flex"
         backgroundColor={colors.primary[400]}

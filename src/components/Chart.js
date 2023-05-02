@@ -31,7 +31,7 @@ function Chart() {
         { y: data.map((d) => d * 2), type: 'scatter', name: 'Actual temp' }, // Second line, with values doubled
         { y: data.map((d) => d * 3), type: 'scatter', name: 'Max temp' }, // Third line, with values tripled
       ]}
-      layout={{ width: 1525, height: 500, title: 'Rakusens Sensor Rx' }}
+      layout={{ width: 1525, height: 500 }}
     />
   );
 }
