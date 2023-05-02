@@ -4,7 +4,7 @@ session_start();
 //Includes the database connection file, 
 include "connectserver.php";
 //Connects to the database
-$link = mysqli_connect(" 35.189.98.101", "root", "admin", "data");
+$link = mysqli_connect("35.189.98.101", "root", "admin", "data");
 
 //Checks if the details from the index(login) page have been posted to the script
 if (isset($_POST['email']) && isset($_POST['password'])) {
@@ -28,18 +28,14 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
 	//Redirects user to an error page if the details are empty (same for second one)
 	if (empty($maile)) {
-		echo '<div class="alert alert-danger" id="error-message">Empty email or password</div>';
-		echo '<script>setTimeout(() => { document.getElementById("error-message").remove(); }, 5000);</script>';
-		header("Location: http://localhost/LoginPage.jsx");
+		header("Location: http://localhost/website/ERROR.html");
 		exit();
 	} else if (empty($pass)) {
-		echo '<div class="alert alert-danger" id="error-message">Empty email or password</div>';
-		echo '<script>setTimeout(() => { document.getElementById("error-message").remove(); }, 5000);</script>';
-		header("Location: http://localhost/LoginPage.jsx");
+		header("Location: http://localhost/website/ERROR.html");
 		exit();
 	} else {
 		//Sets a query to check whether the posted inputs is the same as the email and password of at least 1 row
-		$sql = "SELECT * FROM usernames WHERE Email='$maile' AND Password='$pass'";
+		$sql = "SELECT * FROM users WHERE Email='$maile' AND Password='$pass'";
 		//Performs query on database
 		$result = mysqli_query($conn, $sql);
 		//If statement checks if a row is found that fits the query
@@ -54,26 +50,23 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 				$_SESSION['Email'] = $row['Email'];
 				$_SESSION['Password'] = $row['Password'];
 
+				$run = "DELETE FROM basket";
+				$resultagain = mysqli_query($link, $run);
 				header("Location: homepage.php");
 				exit();
 			} else {
-				echo '<div class="alert alert-danger" id="error-message">Incorrect email or password</div>';
-				echo '<script>setTimeout(() => { document.getElementById("error-message").remove(); }, 5000);</script>';
-				header("Location: http://localhost/LoginPage.jsx");;
+				//If not identical, the user is directed to the appropriate error page
+				header("Location: http://localhost/website/ERROR.html");
 				exit();
 			}
 		} else {
 			//If a result is not found from the query, the user is redirected to the appropriate error page
 			header("Location: http://localhost/website/ERROR.html");
-			echo '<div class="alert alert-danger" id="error-message">Incorrect email or password</div>';
-			echo '<script>setTimeout(() => { document.getElementById("error-message").remove(); }, 5000);</script>';
-			header("Location: http://localhost/LoginPage.jsx");exit();
+			exit();
 		}
 	}
 } else {
 	//If password not posted, the user is redirected to the appropriate error page.
-	echo '<div class="alert alert-danger" id="error-message">Incorrect email or password</div>';
-		echo '<script>setTimeout(() => { document.getElementById("error-message").remove(); }, 5000);</script>';
-		header("Location: http://localhost/LoginPage.jsx");
+	header("Location: index.html");
 	exit();
 }
