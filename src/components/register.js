@@ -1,38 +1,38 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const navigate = useNavigate()
-  const [name, setName] = useState('')
-  const [lastname, setLastName] = useState('')
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const [email, setEmail] = useState('')
+  const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
 
   const nameHandler = (event) => {
-    setName(event.target.value)
-  }
+    setName(event.target.value);
+  };
 
   const lastnameHandler = (event) => {
-    setLastName(event.target.value)
-  }
+    setLastName(event.target.value);
+  };
 
   const usernameHandler = (event) => {
-    setUsername(event.target.value)
-  }
+    setUsername(event.target.value);
+  };
 
   const passwordHandler = (event) => {
-    setPassword(event.target.value)
-  }
+    setPassword(event.target.value);
+  };
 
   const emailHandler = (event) => {
-    setEmail(event.target.value)
-  }
+    setEmail(event.target.value);
+  };
 
   async function registerRequest() {
     try {
-      await fetch('http://localhost:3000/register', {
-        method: 'POST',
+      await fetch("http://localhost/team8/Api.php/register", {
+        method: "POST",
         body: JSON.stringify({
           name: name,
           lastname: lastname,
@@ -43,27 +43,27 @@ export default function Login() {
       })
         .then((respose) => {
           if (respose.ok) {
-            return respose.json()
+            return respose.json();
           }
-          throw new Error('error')
+          throw new Error("error");
         })
         .then((data) => {
           if (data.status) {
-            localStorage.setItem('token', data.status)
-            navigate('/confirm')
+            localStorage.setItem("token", data.status);
+            navigate("/confirm");
           } else {
             //set error
           }
-        })
+        });
     } catch (error) {
-      console.log(error.message)
+      console.log(error.message);
     }
   }
 
   const submitHandler = (event) => {
-    event.preventDefault()
-    registerRequest()
-  }
+    event.preventDefault();
+    registerRequest();
+  };
 
   return (
     <form className="register-form" onSubmit={submitHandler}>
@@ -81,5 +81,5 @@ export default function Login() {
       <button>Register</button>
       <Link to="/login">Login</Link>
     </form>
-  )
+  );
 }

@@ -3,14 +3,17 @@ import Chart from "../../components/Chart";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 const Dashboard = () => {
-    const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
-    return (
-      <Box>
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  return (
+    <Box>
       <Header title="Real-time chart" subtitle="Real-time visualization" />
-        <h4 style={{ fontSize: "30px"}}> This page is simulating real-time visualization</h4>
-        
-        <Box
+      <h4 style={{ fontSize: "30px" }}>
+        {" "}
+        This page is simulating real-time visualization
+      </h4>
+
+      <Box
         display="flex"
         backgroundColor={colors.primary[400]}
         borderRadius="5px"
@@ -18,8 +21,8 @@ const Dashboard = () => {
       >
         <Chart />
       </Box>
-      </Box>
-        );
+    </Box>
+  );
 };
 
 export default Dashboard;

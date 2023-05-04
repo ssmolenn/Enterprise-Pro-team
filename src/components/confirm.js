@@ -11,7 +11,7 @@ export default function AccountConfirm() {
 
   async function confirmRequest() {
     try {
-      await fetch('http://localhost/team8/api/confirm', {
+      await fetch('http://localhost/team8/Api.php/confirm', {
         method: 'POST',
         body: JSON.stringify({
           code: code,

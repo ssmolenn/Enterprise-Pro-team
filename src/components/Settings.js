@@ -18,24 +18,30 @@ function Settings() {
             />
             <h4 style={{ fontSize: "30px" }}>
               {" "}
-              This page allow admin to manage all users from that panel - adding new users, editing their data or removing them.
+              This page allow admin to manage all users from that panel - adding
+              new users, editing their data or removing them.
             </h4>
-            
           </Box>
           <div>
             <Box textAlign="center" borderRadius="5px" margin="4em">
-              <button type="submit" className="btn btn-success" >
-              <a class="nav-link" href="/CreateUser">Add New User</a>
+              <button type="submit" className="btn btn-success">
+                <a class="nav-link" href="/CreateUser">
+                  Add New User
+                </a>
               </button>
             </Box>
             <Box textAlign="center" borderRadius="5px" margin="4em">
               <button type="submit" className="btn btn-warning">
-              <a class="nav-link" href="/EditUser">Edit</a>
+                <a class="nav-link" href="/EditUser">
+                  Edit
+                </a>
               </button>
             </Box>
             <Box textAlign="center" borderRadius="5px" margin="4em">
               <button type="submit" className="btn btn-danger">
-              <a class="nav-link" href="/ListUser">List</a>
+                <a class="nav-link" href="/ListUser">
+                  List
+                </a>
               </button>
             </Box>
           </div>

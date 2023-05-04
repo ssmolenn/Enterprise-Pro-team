@@ -11,27 +11,36 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.11",
     "@mui/x-data-grid": "^5.17.25",
-    "@nivo/line": "^0.80.0",
+    "@nivo/line": "^0.81.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dash-core-components": "^2.9.2",
+    "express": "^4.18.2",
     "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
     "json-server": "^0.17.3",
+    "jsonwebtoken": "^9.0.0",
     "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
     "plotly.js": "^2.18.2",
     "ra-data-simple-rest": "^4.9.3",
     "react": "^18.2.0",
     "react-admin": "^4.9.4",
+    "react-ajax": "^0.1.1",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-plotly.js": "^2.6.0",
+    "react-plotlyjs": "^0.4.4",
     "react-pro-sidebar": "^1.0.0",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.8.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-sticky-box": "^2.0.4",
     "react-stickynode": "^4.1.0",
     "web-vitals": "^2.1.4",
@@ -60,18 +69,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "The client, Rakusesn, seeks an interactive and real-time visualization dashboard to optimize processes using AI/Big data technology. The purpose of this web application is to enable users to monitor and view temperature data from multiple installed sensors seamlessly on desktops, tablets, and mobile devices. This application aims to improve operational efficiency and product quality while reducing energy consumption by facilitating the adjustment of production temperatures. This document has been prepared based on the original specification document and interactions such as interviews and emails with the client.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ssmolenn/Enterprise-Pro-team.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ssmolenn/Enterprise-Pro-team/issues"
-  },
-  "homepage": "https://github.com/ssmolenn/Enterprise-Pro-team#readme"
+  }
 }

@@ -1,44 +1,44 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ResetPassword() {
-  const navigate = useNavigate()
-  const [username, setUsername] = useState('')
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
 
   const usernameHandler = (event) => {
-    setUsername(event.target.value)
-  }
+    setUsername(event.target.value);
+  };
 
   async function resetRequest() {
     try {
-      await fetch('http://localhost/EntPro/api/reset', {
-        method: 'POST',
+      await fetch("http://localhost/team8/Api.php/reset", {
+        method: "POST",
         body: JSON.stringify({
           username: username,
         }),
       })
         .then((respose) => {
           if (respose.ok) {
-            return respose.json()
+            return respose.json();
           }
-          throw new Error('error')
+          throw new Error("error");
         })
         .then((data) => {
           if (data.status) {
-            navigate('/')
+            navigate("/");
           } else {
             //set error
           }
-        })
+        });
     } catch (error) {
-      console.log(error.message)
+      console.log(error.message);
     }
   }
 
   const submitHandler = (event) => {
-    event.preventDefault()
-    resetRequest()
-  }
+    event.preventDefault();
+    resetRequest();
+  };
 
   return (
     <form className="register-form" onSubmit={submitHandler}>
@@ -48,5 +48,5 @@ export default function ResetPassword() {
       <button>Reset Password</button>
       <Link to="/login">Login</Link>
     </form>
-  )
+  );
 }

@@ -39,65 +39,66 @@ const Sidebar = () => {
         },
       }}
     >
-      <Box 
-      sx={{
+      <Box
+        sx={{
           position: "sticky",
           left: 0,
           top: 0,
-          }}>
-      <Menu iconShape="square">
-        <Box mb="25px">
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            margin="5em"
-          >
-            <img
-              alt=""
-              width="100px"
-              height="100px"
-              src={`../../pic/USER.jpg`}
-              style={{ cursor: "pointer", borderRadius: "50%" }}
-            />
-          </Box>
-          <Box textAlign="center">
-            <Typography
-              variant="h2"
-              color={colors.grey[100]}
-              fontWeight="bold"
-              sx={{ m: "10px 0 0 0" }}
+        }}
+      >
+        <Menu iconShape="square">
+          <Box mb="25px">
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              margin="5em"
             >
-              Username
-            </Typography>
-            <Typography variant="h5" color={colors.greenAccent[500]}>
-              username
-            </Typography>
+              <img
+                alt=""
+                width="100px"
+                height="100px"
+                src={`../../pic/USER.jpg`}
+                style={{ cursor: "pointer", borderRadius: "50%" }}
+              />
+            </Box>
+            <Box textAlign="center">
+              <Typography
+                variant="h2"
+                color={colors.grey[100]}
+                fontWeight="bold"
+                sx={{ m: "10px 0 0 0" }}
+              >
+                Username
+              </Typography>
+              <Typography variant="h5" color={colors.greenAccent[500]}>
+                username
+              </Typography>
+            </Box>
           </Box>
-        </Box>
-        <Box display="flex" flexDirection={"column"}>
-          <IconButton sx={{ p: 6 }}>
-            <Link to="/index">
-              <HomeOutlinedIcon style={{ fontSize: 60 }} />
-            </Link>
-          </IconButton>
-          <IconButton sx={{ p: 6 }}>
-            <Link to="/Charts">
-              <SsidChartIcon style={{ fontSize: 60 }} />
-            </Link>
-          </IconButton>
-          <IconButton sx={{ p: 6 }}>
-            <Link to="/Contact">
-              <HelpOutlineOutlinedIcon style={{ fontSize: 60 }} />
-            </Link>
-          </IconButton>
-          <IconButton sx={{ p: 6 }}>
-            <Link to="/register">
-              <LoginOutlinedIcon style={{ fontSize: 60 }} />
-            </Link>
-          </IconButton>
-        </Box>
-      </Menu>
+          <Box display="flex" flexDirection={"column"}>
+            <IconButton sx={{ p: 6 }}>
+              <Link to="/index">
+                <HomeOutlinedIcon style={{ fontSize: 60 }} />
+              </Link>
+            </IconButton>
+            <IconButton sx={{ p: 6 }}>
+              <Link to="/Charts">
+                <SsidChartIcon style={{ fontSize: 60 }} />
+              </Link>
+            </IconButton>
+            <IconButton sx={{ p: 6 }}>
+              <Link to="/Contact">
+                <HelpOutlineOutlinedIcon style={{ fontSize: 60 }} />
+              </Link>
+            </IconButton>
+            <IconButton sx={{ p: 6 }}>
+              <Link to="/register">
+                <LoginOutlinedIcon style={{ fontSize: 60 }} />
+              </Link>
+            </IconButton>
+          </Box>
+        </Menu>
       </Box>
     </Box>
   );
