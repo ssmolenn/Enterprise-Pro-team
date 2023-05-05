@@ -2,10 +2,7 @@ import axios from "axios"; //npm install axios --save
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
-<<<<<<< HEAD
-=======
 import React from "react";
->>>>>>> 0c7502f (Connecting Register/Login page with database)
 
 
 export default function ListUser() {
@@ -15,11 +12,7 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
-<<<<<<< HEAD
-    axios.get("http://localhost/react/api/").then(function (response) {
-=======
     axios.get("http://localhost/team8/api/").then(function (response) {
->>>>>>> 0c7502f (Connecting Register/Login page with database)
       console.log(response.data);
       setUsers(response.data);
     });

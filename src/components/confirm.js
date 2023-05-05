@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-<<<<<<< HEAD
-=======
 import React from "react";
->>>>>>> 0c7502f (Connecting Register/Login page with database)
 
 export default function AccountConfirm() {
   const navigate = useNavigate()
@@ -15,11 +12,7 @@ export default function AccountConfirm() {
 
   async function confirmRequest() {
     try {
-<<<<<<< HEAD
-      await fetch('http://localhost/team8/Api.php/confirm', {
-=======
       await fetch('http://localhost/team8/api.php/confirm', {
->>>>>>> 0c7502f (Connecting Register/Login page with database)
         method: 'POST',
         body: JSON.stringify({
           code: code,

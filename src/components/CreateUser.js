@@ -2,11 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 0c7502f (Connecting Register/Login page with database)
 export default function ListUser() {
   const navigate = useNavigate();
   const [inputs, setInputs] = useState([]);
