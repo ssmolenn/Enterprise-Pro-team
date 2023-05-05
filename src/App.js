@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
+=======
+
+import { ColorModeContext, useMode } from "./theme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { Routes, Route, BrowserRouter, Navigate  } from "react-router-dom";
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
 import TopBar from "./scenes/global/Topbar";
 import Dashboard from "./scenes/dashboard/index";
 import Settings from "./components/Settings";
@@ -13,6 +20,7 @@ import EditUser from "./components/EditUser";
 import ListUser from "./components/ListUser";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+<<<<<<< HEAD
 import AccountConfirm from "./components/confirm";
 import Home from "./components/Home";
 import Login from "./components/login";
@@ -20,10 +28,26 @@ import Logout from "./components/logout";
 import Profile from "./components/profile";
 import Register from "./components/register";
 import ResetPassword from "./components/reset";
+=======
+import Home from "./components/Home.js";
+import ResetPassword from "./components/reset";
+import Profile from "./components/profile";
+import Logout from "./components/logout";
+import AccountConfirm from "./components/confirm";
+import Login from "./components/login";
+import Register from "./components/register";
+import React from "react";
+
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
 
 function App() {
   const [theme, colorMode] = useMode();
 
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
@@ -32,6 +56,7 @@ function App() {
           <Sidebar />
           <main className="content">
             <TopBar />
+<<<<<<< HEAD
 
             <Routes>
               <Route path="/" element={<Home />} />
@@ -50,6 +75,25 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/logout" element={<Logout />} />
             </Routes>
+=======
+              <Routes>
+                
+                <Route path="/" element={<Home />} />
+                <Route path="/Index" element={<Index />} />
+                <Route path="/Charts" element={<Charts />} />
+                <Route path="/Settings" element={<Settings />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/CreateUser" element={<CreateUser />} />
+                <Route path="/EditUser" element={<EditUser />} />
+                <Route path="/ListUser" element={<ListUser />} />
+                <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/confirm" element={<AccountConfirm />} />
+        <Route path="/reset" element={<ResetPassword />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/logout" element={<Logout />} />
+              </Routes>
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
           </main>
         </div>
       </ThemeProvider>

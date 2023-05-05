@@ -8,6 +8,10 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import SsidChartIcon from "@mui/icons-material/SsidChart";
+<<<<<<< HEAD
+=======
+import React from "react";
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
 
 const Sidebar = () => {
   const theme = useTheme();
@@ -39,6 +43,7 @@ const Sidebar = () => {
         },
       }}
     >
+<<<<<<< HEAD
       <Box
         sx={{
           position: "sticky",
@@ -99,6 +104,67 @@ const Sidebar = () => {
             </IconButton>
           </Box>
         </Menu>
+=======
+      <Box 
+      sx={{
+          position: "sticky",
+          left: 0,
+          top: 0,
+          }}>
+      <Menu iconShape="square">
+        <Box mb="25px">
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            margin="5em"
+          >
+            <img
+              alt=""
+              width="100px"
+              height="100px"
+              src={`../../pic/USER.jpg`}
+              style={{ cursor: "pointer", borderRadius: "50%" }}
+            />
+          </Box>
+          <Box textAlign="center">
+            <Typography
+              variant="h2"
+              color={colors.grey[100]}
+              fontWeight="bold"
+              sx={{ m: "10px 0 0 0" }}
+            >
+              Username
+            </Typography>
+            <Typography variant="h5" color={colors.greenAccent[500]}>
+              username
+            </Typography>
+          </Box>
+        </Box>
+        <Box display="flex" flexDirection={"column"}>
+          <IconButton sx={{ p: 6 }}>
+            <Link to="/index">
+              <HomeOutlinedIcon style={{ fontSize: 60 }} />
+            </Link>
+          </IconButton>
+          <IconButton sx={{ p: 6 }}>
+            <Link to="/Charts">
+              <SsidChartIcon style={{ fontSize: 60 }} />
+            </Link>
+          </IconButton>
+          <IconButton sx={{ p: 6 }}>
+            <Link to="/Contact">
+              <HelpOutlineOutlinedIcon style={{ fontSize: 60 }} />
+            </Link>
+          </IconButton>
+          <IconButton sx={{ p: 6 }}>
+            <Link to="/register">
+              <LoginOutlinedIcon style={{ fontSize: 60 }} />
+            </Link>
+          </IconButton>
+        </Box>
+      </Menu>
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
       </Box>
     </Box>
   );

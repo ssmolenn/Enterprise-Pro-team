@@ -8,7 +8,7 @@ export default function Profile() {
 
   const getUser = useCallback(async () => {
     try {
-      await fetch('http://localhost/phpmyadmin/index.php?route=/sql&db=team8&table=user&pos=0', {
+      await fetch('http://localhost/team8/api.php/user', {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

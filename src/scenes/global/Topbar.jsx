@@ -8,7 +8,11 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+<<<<<<< HEAD
 import Settings from "../../components/Settings";
+=======
+import React from "react";
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
 
 const TopBar = () => {
   const theme = useTheme();

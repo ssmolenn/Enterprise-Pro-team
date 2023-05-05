@@ -18,6 +18,7 @@ function Settings() {
             />
             <h4 style={{ fontSize: "30px" }}>
               {" "}
+<<<<<<< HEAD
               This page allow admin to manage all users from that panel - adding
               new users, editing their data or removing them.
             </h4>
@@ -28,20 +29,38 @@ function Settings() {
                 <a class="nav-link" href="/CreateUser">
                   Add New User
                 </a>
+=======
+              This page allow admin to manage all users from that panel - adding new users, editing their data or removing them.
+            </h4>
+            
+          </Box>
+          <div>
+            <Box textAlign="center" borderRadius="5px" margin="4em">
+              <button type="submit" className="btn btn-success" >
+              <a class="nav-link" href="/CreateUser">Add New User</a>
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
               </button>
             </Box>
             <Box textAlign="center" borderRadius="5px" margin="4em">
               <button type="submit" className="btn btn-warning">
+<<<<<<< HEAD
                 <a class="nav-link" href="/EditUser">
                   Edit
                 </a>
+=======
+              <a class="nav-link" href="/EditUser">Edit</a>
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
               </button>
             </Box>
             <Box textAlign="center" borderRadius="5px" margin="4em">
               <button type="submit" className="btn btn-danger">
+<<<<<<< HEAD
                 <a class="nav-link" href="/ListUser">
                   List
                 </a>
+=======
+              <a class="nav-link" href="/ListUser">List</a>
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
               </button>
             </Box>
           </div>

@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { Box } from "@mui/material";
+<<<<<<< HEAD
+=======
+import React from "react";
+>>>>>>> 0c7502f (Connecting Register/Login page with database)
 
 
 export default function ListUser() {

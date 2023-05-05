@@ -21,7 +21,7 @@ export default function Login() {
 
   async function loginRequest() {
     try {
-      await fetch('http://localhost/team8/Api.php/login', {
+      await fetch('http://localhost/team8/api.php/login', {
         method: 'POST',
         body: JSON.stringify({
           username: username,
